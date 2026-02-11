@@ -1,3 +1,7 @@
+/* * Original Design & Code by Aravinthaprasath V.
+ * Licensed under CC BY 4.0
+ */
+
 // Portfolio website functionality
 document.addEventListener('DOMContentLoaded', () => {
     // Define a function that will be called after all components are loaded
