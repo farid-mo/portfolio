@@ -31,6 +31,103 @@
     vertical-align: middle;
 }
 
+/* ZTM icon styling */
+.fab.fa-ztm,
+.ztm-badge i.fab.fa-ztm {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/ztm-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* Udemy icon styling */
+.fab.fa-udemy,
+.udemy-badge i.fab.fa-udemy {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/udemy-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* EdX icon styling */
+.fab.fa-edx,
+.edx-badge i.fab.fa-edx {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/edx-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* CI/CD icon styling */
+.cicd-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/cicd-icon.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* Unesco icon styling */
+.fab.fa-unesco,
+.unesco-badge i.fab.fa-unesco {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/unesco-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* Coursera icon styling */
+.fab.fa-coursera,
+.coursera-badge i.fab.fa-coursera {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../../assets/images/coursera-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+/* ZTM styling */
+.ztm-badge i {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Udemy styling */
+.udemy-badge i {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Coursera styling */
 .coursera-badge i {
     font-size: 14px;
@@ -84,6 +181,27 @@
     color: var(--primary-color);
 }
 
+/* Udemy badge styling */
+.udemy-badge span {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* EdX badge styling */
+.edx-badge span {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Unesco badge styling */
+.unesco-badge span {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* Scaler badge for certifications */
 .scaler-badge {
     display: inline-flex;
@@ -130,6 +248,36 @@
     );
 }
 
+.udemy-cert {
+    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    background: linear-gradient(
+        to bottom right,
+        var(--card-bg),
+        var(--card-bg),
+        rgba(var(--primary-color-rgb), 0.05)
+    );
+}
+
+.edx-cert {
+    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    background: linear-gradient(
+        to bottom right,
+        var(--card-bg),
+        var(--card-bg),
+        rgba(var(--primary-color-rgb), 0.05)
+    );
+}
+
+.ztm-cert {
+    border: 1px solid rgba(var(--primary-color-rgb), 0.15);
+    background: linear-gradient(
+        to bottom right,
+        var(--card-bg),
+        var(--card-bg),
+        rgba(var(--primary-color-rgb), 0.05)
+    );
+}
+
 .cert-card:hover .scaler-badge {
     background-color: var(--primary-color);
     transform: scale(1.05);
@@ -159,25 +307,54 @@
     color: white;
 }
 
+/* Udemy badge hover */
+.cert-card:hover .udemy-badge {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.cert-card:hover .udemy-badge span {
+    color: white;
+}
+
+/* EdX badge hover */
+.cert-card:hover .edx-badge {
+    background-color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+.cert-card:hover .edx-badge span,
+.cert-card:hover .edx-badge i.fab.fa-edx {
+    color: white;
+}
+
+.cert-card:hover .edx-badge i.fab.fa-edx {
+    filter: brightness(0) invert(1);
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .social-link .scaler-icon {
         width: 16px;
         height: 16px;
     }
-      .scaler-icon-small {
+
+    .scaler-icon-small {
         width: 12px;
         height: 12px;
     }
-    
-    .coursera-badge i {
+
+    .coursera-badge i,
+    .hackerrank-badge i,
+    .edx-badge i.fab.fa-edx,
+    .cicd-icon {
         font-size: 12px;
     }
-    
-    .hackerrank-badge i {
+
+    .edx-badge span {
         font-size: 12px;
     }
-    
+
     .cert-logo-badge {
         padding: 1px 6px;
         min-width: 20px;
